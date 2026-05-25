@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal com bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- botao que abre o Modal -->
+     <button type="button" class="btn btn-primary my-4 mx-4" data-bs-toggle="modal" data-bs-target="#JanelaModal">
+        Abrir
+     </button>
+
+     <!-- Modal -->
+      <div id="JanelaModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Titulo do modal</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quidem cumque illo reiciendis voluptatibus quia, pariatur illum adipisci accusamus animi officiis eius saepe necessitatibus, alias ipsam iusto quis est maiores.
+                    Doloremque quo voluptatibus ad nam illo? Maxime optio repellendus sequi ipsa natus, provident placeat id recusandae numquam veniam reprehenderit debitis quaerat, deserunt eligendi, cumque nobis veritatis obcaecati architecto quos molestiae!
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceitar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>
