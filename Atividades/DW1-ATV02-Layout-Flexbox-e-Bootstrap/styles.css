@@ -1,0 +1,170 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background: #8b4513;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+
+    padding:20px;
+
+    z-index:999;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:100vh;
+
+    background-image:url("imagens/banner.avif");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+    flex-direction: column;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.botao-area{
+    position:relative;
+    margin-top:20px;
+}
+
+.badge{
+    position:absolute;
+
+    top:-15px;
+    right:-20px;
+
+    background:red;
+    color:white;
+
+    padding:5px;
+}
+
+.cardapio{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+
+    justify-content:center;
+
+    padding:50px;
+}
+
+.card-pizza{
+
+    width:300px;
+
+    height: 350px;
+
+    background-color:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+    flex: 1;
+    
+    
+}
+
+.card-pizza img {
+    width: 100%;
+    height: 180px;     
+    object-fit: cover;  
+}
+
+.card-pizza h3 {
+    margin: 20px 0 10px 0;
+}
+
+.sobre{
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    padding:50px;
+}
+
+.sobre img{
+    width:400px;
+}
+
+.contato{
+    display:flex;
+    justify-content:space-around;
+
+    padding:50px;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+
+    background:black;
+    color:white;
+
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    align-items:center;
+}
+
+.cardapio{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:40px;
+
+    flex-wrap:wrap;
+}
+
+.sobre{
+    flex-direction:column;
+}
+
+.contato{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+
+
+}
