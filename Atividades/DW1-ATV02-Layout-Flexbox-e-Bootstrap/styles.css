@@ -2,16 +2,49 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
-    font-family:Arial;
+.cardapio{
+    position: relative;
 }
+
+.titulo-cardapio{
+
+    position: absolute;
+
+    margin-top: 100px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 50px;
+
+    color: white;
+
+    z-index: 10;
+}
+
+.container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
 
 header{
     position:fixed;
     width:100%;
-    background: #8b4513;
+    height: fit-content;
+    background: #4b382b;
     color:white;
 
     display:flex;
@@ -30,12 +63,22 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
+    margin-top: 10px;
+
+}
+
+.card-pizza span{
+    font-weight: bold;
+}
+
+.para{
+    font-size: x-large;
 }
 
 .hero{
     height:100vh;
 
-    background-image:url("imagens/banner.avif");
+    background-image:url("imagens/banner.jpg");
 
     background-size:cover;
 
@@ -46,6 +89,9 @@ nav a{
 
     justify-content:center;
     align-items:center;
+    
+    color: white;
+    
 }
 
 .botao-area{
@@ -69,10 +115,20 @@ nav a{
     display:flex;
     flex-wrap:wrap;
     gap:20px;
+    height: fit-content;
 
     justify-content:center;
 
     padding:50px;
+
+    background-color: #d4af37;
+
+
+}
+
+.card-pizza:hover {
+    transform: scale(1.1);
+    cursor: pointer
 }
 
 .card-pizza{
@@ -81,7 +137,7 @@ nav a{
 
     height: 350px;
 
-    background-color:white;
+    background-color: #dba87f;
 
     border-radius:10px;
 
@@ -91,8 +147,11 @@ nav a{
 
     text-align:center;
 
-    flex: 1;
-    
+    transition: all ease 0.8s;
+
+    flex-wrap: wrap;
+
+    margin-top: 200px;
     
 }
 
@@ -111,18 +170,29 @@ nav a{
     align-items:center;
     gap:30px;
 
+    background-color: #d4af37;
+
     padding:50px;
+
+
 }
 
 .sobre img{
     width:400px;
+    margin-top: 50px;
 }
+.sobre h2{
+   
+    margin-top: 70px;
+}
+
 
 .contato{
     display:flex;
     justify-content:space-around;
 
     padding:50px;
+
 }
 
 footer{
@@ -153,6 +223,8 @@ header{
     padding:40px;
 
     flex-wrap:wrap;
+
+    
 }
 
 .sobre{
@@ -164,6 +236,7 @@ header{
     align-items:center;
     gap:20px;
 }
+
 
 
 

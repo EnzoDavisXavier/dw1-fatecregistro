@@ -10,6 +10,11 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,9 +23,9 @@
     <h1>Bella Pizza</h1>
 
     <nav>
-        <a href="">Cardápio</a>
-        <a href="">Sobre</a>
-        <a href="">Contato</a>
+        <a href="#carda">Cardápio</a>
+        <a href="#sob">Sobre</a>
+        <a href="#cont">Contato</a>
     </nav>
 </header>
 
@@ -42,65 +47,82 @@
     Promoção: Pizza Grande com desconto!
 </div>
 
-<section class="cardapio">
-    
-    <div class="card-pizza">
+<section class="cardapio" id="carda">
 
-        <h3>Calabresa</h3>
+<h2 class="titulo-cardapio">Cardápio</h2>
+
+<div class="container">
+    <div class="card-pizza">
 
         <img src="imagens/calabresa.jpg" alt="Pizza Calabresa">
 
+        <h3>Calabresa</h3>
+
         <p>Calabresa com queijo.</p>
+
+        <span class="para">R$45,90</span>
 
     </div>
 
     <div class="card-pizza">
-
-        <h3>Frango</h3>
 
         <img src="imagens/frango.avif" alt="Pizza Frango">
 
+        <h3>Frango</h3>
+
         <p>Frango e catupiry.</p>
+
+        <span class="para">R$48,90</span>
 
     </div>
 
     <div class="card-pizza">
-
-        <h3>Portuguesa</h3>
 
         <img src="imagens/portuguesa.avif" alt="Pizza Portuguesa">
 
+        
+        <h3>Portuguesa</h3>
+
         <p>Completa.</p>
+
+        <span class="para">R$52,90</span>
 
     </div>
 
     <div class="card-pizza">
 
-        <h3>Chocolate</h3>
-
         <img src="imagens/chocolate.avif" alt="Pizza Chocolate">
+        
+        <h3>Chocolate</h3>
 
         <p>Pizza doce.</p>
 
+        <span class="para">R$49,90</span>
+
     </div>
+</div>
 
 </section>
 
-<section class="sobre">
+<section class="sobre" id="sob">
 
-    <img src="https://picsum.photos/400/300">
+    <img src="imagens/sobre.jpg">
 
     <div>
         <h2>Sobre nós</h2>
 
         <p>
-            Somos uma pizzaria especializada em pizzas artesanais.
+            Bem-vindo à Bella Pizza, onde tradição, sabor e paixão pela pizza se encontram em cada fatia. Nossa missão é oferecer uma experiência única, combinando ingredientes selecionados, massas artesanais e receitas preparadas com cuidado para transformar momentos simples em lembranças especiais.
+
+Inspirada nas autênticas pizzarias italianas, a Bella Pizza nasceu do amor pela boa gastronomia e pelo desejo de reunir amigos e famílias em torno de sabores inesquecíveis. Trabalhamos diariamente para garantir qualidade, atendimento acolhedor e pizzas feitas com dedicação do forno à sua mesa.
+
+Aqui, cada detalhe importa: desde o molho preparado artesanalmente até a escolha dos ingredientes frescos que fazem nossas receitas ganharem personalidade. Seja para um jantar especial, uma reunião entre amigos ou aquele momento de conforto no fim do dia, a Bella Pizza está pronta para fazer parte da sua história.
         </p>
     </div>
 
 </section>
 
-<section class="contato">
+<section class="contato" id="cont">
 
     <div>
         <h3>Endereço</h3>
@@ -122,6 +144,8 @@
 <div class="container mt-5">
 
 <form>
+
+<textarea class="form-control mb-3" placeholder="Feedback" rows="5"></textarea>
 
 <input class="form-control mb-3" type="text" placeholder="Nome">
 
